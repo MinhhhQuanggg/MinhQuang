@@ -1,0 +1,18 @@
+name: Thử nghiệm đọc file MinhQuang
+on: 
+  push:
+    branches: ["main"]
+
+jobs:
+  thuc_hanh_chay_folder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Bước 1 - Xin chào
+        run: echo "Hello Quang, starting running"
+
+      - name: Bước 2 - Tải code
+        uses: actions/checkout@v6
+
+      - name: Bước 3 - Đọc file
+        run: cat MinhQuang
