@@ -1,0 +1,5 @@
+# --- GIAI ĐOẠN 1: BUILD ---
+FROM maven:3.9.11-eclipse-temurin-21 AS builder
+WORKDIR /app
+COPY . .
+# Biên dịch code thành file .jar (bỏ qua chạy thử test để build nhanh)
